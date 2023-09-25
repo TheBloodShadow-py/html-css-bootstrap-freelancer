@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+/* GENERAL SETTINGS */
+:root {
+  --nav-footer-primary-bg-color: #2c3e50;
+  --footer-secondary-bg-color: #3a546d;
+  --text-color: #ffffff;
+  --primary-bg-color: #1abc9c;
+  --section-bg-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+a,
+strong,
+span,
+i {
+  color: var(--text-color);
+  font-family: "Open Sans", sans-serif;
+}
