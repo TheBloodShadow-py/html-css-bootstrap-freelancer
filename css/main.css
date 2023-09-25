@@ -22,3 +22,30 @@ i {
   color: var(--text-color);
   font-family: "Open Sans", sans-serif;
 }
+
+ul,
+ol {
+  list-style: none;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--nav-footer-primary-bg-color);
+}
+
+header .icon-wrapper {
+  transition: 0.3s linear background-color;
+  cursor: pointer;
+}
+
+header .icon-wrapper:hover {
+  background-color: var(--footer-secondary-bg-color);
+}
