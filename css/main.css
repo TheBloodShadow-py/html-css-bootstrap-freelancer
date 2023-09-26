@@ -73,7 +73,7 @@ header ul li {
   position: relative;
 }
 
-.hero .icon-wrapper {
+.star {
   font-size: 1.8rem;
   position: relative;
 }
@@ -82,7 +82,7 @@ header ul li {
   transition: 0.2s width linear !important;
 }
 
-.hero .icon-wrapper::before {
+.star::before {
   content: "";
   display: table;
   position: absolute;
@@ -96,7 +96,7 @@ header ul li {
   transition: 0.3s linear width, 0.3s linear left;
 }
 
-.hero .icon-wrapper::after {
+.star::after {
   content: "";
   display: table;
   position: absolute;
@@ -126,16 +126,70 @@ header ul li {
   display: none !important;
 }
 
+/* PORTFOLIO SECTION */
+
+.black-star {
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.black-star i {
+  color: var(--nav-footer-primary-bg-color);
+}
+
+.black-star::before {
+  content: "";
+  display: table;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: -3.1rem;
+  width: 5rem;
+  height: 0.25rem;
+  border-radius: 0.625rem;
+  background-color: var(--nav-footer-primary-bg-color);
+  transition: 0.3s linear width, 0.3s linear left;
+}
+
+.black-star::after {
+  content: "";
+  display: table;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 5.2rem;
+  width: 5rem;
+  height: 0.25rem;
+  border-radius: 0.625rem;
+  background-color: var(--nav-footer-primary-bg-color);
+  transition: 0.3s linear width, 0.3s linear left;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  background-color: var(--primary-bg-color);
+}
+
 /* MEDIA */
 
 @media (min-width: 768px) {
-  .hero .icon-wrapper::before {
+  .star::before,
+  .black-star::before {
     width: 6rem;
     left: -3.5rem;
   }
-  .hero .icon-wrapper::after {
+  .star::after,
+  .black-star::after {
     width: 6rem;
     left: 5.6rem;
+  }
+  .about .col {
+    max-width: 400px;
   }
 }
 
@@ -146,11 +200,13 @@ header ul li {
 }
 
 @media (min-width: 1200px) {
-  .hero .icon-wrapper::before {
+  .star::before,
+  .black-star::before {
     width: 8rem;
     left: -4.5rem;
   }
-  .hero .icon-wrapper::after {
+  .star::after,
+  .black-star::after {
     width: 8rem;
     left: 6.6rem;
   }
