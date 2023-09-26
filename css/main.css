@@ -17,6 +17,8 @@ ol,
 ul,
 a,
 strong,
+input,
+textarea,
 span,
 i {
   color: var(--text-color);
@@ -222,6 +224,32 @@ header ul li {
 
 .submit:hover {
   background-color: #15816c !important;
+}
+
+/* FOOTER */
+
+.info-container {
+  background-color: var(--footer-secondary-bg-color);
+}
+
+.copyright-container {
+  background-color: var(--nav-footer-primary-bg-color);
+}
+
+.social-icon {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.social-icon i {
+  aspect-ratio: 1/1;
+}
+
+.loaction span,
+.about-free p {
+  max-width: 300px;
 }
 
 /* MEDIA */
