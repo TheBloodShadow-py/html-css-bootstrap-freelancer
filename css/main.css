@@ -74,6 +74,16 @@ header ul li {
   cursor: pointer;
 }
 
+.list-group-item {
+  background-color: var(--nav-footer-primary-bg-color);
+  color: white;
+  border-color: var(--footer-secondary-bg-color);
+}
+
+.list-group-item:first-child {
+  border-top: 1px solid var(--footer-secondary-bg-color);
+}
+
 /* HERO SECTION */
 
 .hero {
