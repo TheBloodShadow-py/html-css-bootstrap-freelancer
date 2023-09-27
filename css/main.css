@@ -9,6 +9,10 @@
   --section-bg-color: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -237,6 +241,12 @@ header ul li {
 }
 
 /* FOOTER */
+
+footer {
+  position: sticky;
+  left: 0;
+  width: 100%;
+}
 
 .info-container {
   background-color: var(--footer-secondary-bg-color);
